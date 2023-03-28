@@ -14,6 +14,7 @@ import environ
 from pathlib import Path
 from dotenv import load_dotenv
 from django.contrib.messages import constants as messages
+from django.utils.translation import gettext_lazy as _
 
 load_dotenv()
 
@@ -128,6 +129,10 @@ USE_I18N = True
 
 USE_TZ = True
 
+LANGUAGES = [
+    ('vi', _('Vietnamese')),
+    ('en', _('English')),
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/

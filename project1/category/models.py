@@ -1,9 +1,13 @@
 from django.db import models
-# Create your models here.
+from django.utils.translation import gettext_lazy as _
 
 
 class Category(models.Model):
     slug = models.SlugField(max_length=100, unique=True)
+    category_name = models.CharField(
+        max_length=50, unique=True, verbose_name=_('Category Name'))
+    description = models.TextField(
+        max_length=255, blank=True, verbose_name=_('Description'))
     category_name = models.CharField(max_length=50, unique=True)
     description = models.TextField(max_length=255, blank=True)
     category_image = models.ImageField(
@@ -12,8 +16,8 @@ class Category(models.Model):
         'self', on_delete=models.CASCADE, null=True, blank=True, related_name='children')
 
     class Meta:
-        verbose_name = 'category'
-        verbose_name_plural = 'categories'
+        verbose_name = _('category')
+        verbose_name_plural = _('categories')
 
     def __str__(self):
         return self.category_name

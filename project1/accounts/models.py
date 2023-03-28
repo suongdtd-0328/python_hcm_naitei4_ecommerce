@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.checks.messages import Error
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.password_validation import validate_password
 
 # Create your models here.
@@ -43,26 +44,31 @@ class MyAccountManager(BaseUserManager):
 
 
 class Account(AbstractBaseUser):
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
-    username = models.CharField(max_length=50, unique=True)
-    email = models.EmailField(max_length=100, unique=True)
-    phone_number = models.CharField(max_length=50)
+    first_name = models.CharField(max_length=50, verbose_name=_('first name'))
+    last_name = models.CharField(max_length=50, verbose_name=_('last name'))
+    username = models.CharField(
+        max_length=50, unique=True, verbose_name=_('username'))
+    email = models.EmailField(
+        max_length=100, unique=True, verbose_name=_('email address'))
+    phone_number = models.CharField(
+        max_length=50, verbose_name=_('phone number'))
 
     # required
-    date_joined = models.DateTimeField(auto_now_add=True)
-    last_login = models.DateTimeField(auto_now_add=True)
-    is_active = models.BooleanField(default=False)
-    is_staff = models.BooleanField(default=False)
+    date_joined = models.DateTimeField(
+        auto_now_add=True, verbose_name=_('date joined'))
+    last_login = models.DateTimeField(
+        auto_now_add=True, verbose_name=_('last login'))
+    is_active = models.BooleanField(default=False, verbose_name=_('is active'))
+    is_staff = models.BooleanField(default=False, verbose_name=_('is staff'))
 
     role_choices = [
-        ('user', 'User'),
-        ('staff', 'Staff'),
-        ('admin', 'Admin'),
-        ('superadmin', 'Superadmin'),
+        ('user', _('User')),
+        ('staff', _('Staff')),
+        ('admin', _('Admin')),
+        ('superadmin', _('Superadmin')),
     ]
     role = models.CharField(
-        max_length=20, choices=role_choices, default='user')
+        max_length=20, choices=role_choices, default='user', verbose_name=_('role'))
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
