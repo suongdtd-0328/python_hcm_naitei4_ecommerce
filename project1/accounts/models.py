@@ -72,9 +72,7 @@ class Account(AbstractBaseUser):
         return self.email
 
     def has_perm(self, perm, obj=None):
-        if self.role in ['superadmin', 'admin', 'staff']:
-            return True
-        return False
+        return self.role in ['superadmin', 'admin', 'staff']
 
     def has_module_perms(self, add_label):
         return True
