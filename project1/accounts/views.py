@@ -9,6 +9,7 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.core.mail import EmailMessage
 from django.contrib.auth.tokens import default_token_generator
+from django.utils.translation import gettext_lazy as _
 
 # Create your views here.
 
@@ -25,7 +26,8 @@ def register(request):
             username = email.split('@')[0]
 
             if Account.objects.filter(username=username).exists():
-                form.add_error('email', 'Email has username already exists.')
+                form.add_error('email', _(
+                    'Email has username already exists.'))
                 return render(request, 'accounts/register.html', {'form': form})
             else:
                 user = Account.objects.create_user(
@@ -34,7 +36,7 @@ def register(request):
                 user.save()
 
             current_site = get_current_site(request=request)
-            mail_subject = 'Activate your account.'
+            mail_subject = _('Activate your account.')
             message = render_to_string('accounts/active_email.html', {
                 'user': user,
                 'domain': current_site.domain,
@@ -45,11 +47,12 @@ def register(request):
             send_email.send()
             messages.success(
                 request=request,
-                message="Please confirm your email address to complete the registration"
+                message=_(
+                    "Please confirm your email address to complete the registration")
             )
             return redirect('login')
         else:
-            messages.error(request=request, message="Register failed!")
+            messages.error(request=request, message=_("Register failed!"))
     else:
         form = RegistrationForm()
     context = {
@@ -69,10 +72,11 @@ def activate(request, uidb64, token):
         user.is_active = True
         user.save()
         messages.success(
-            request=request, message="Your account is activated, please login!")
+            request=request, message=_("Your account is activated, please login!"))
         return render(request, 'accounts/login.html')
     else:
-        messages.error(request=request, message="Activation link is invalid!")
+        messages.error(request=request, message=_(
+            "Activation link is invalid!"))
         return redirect('/')
 
 
@@ -83,10 +87,10 @@ def login(request):
         user = auth.authenticate(email=email, password=password)
         if user is not None:
             auth.login(request=request, user=user)
-            messages.success(request=request, message="Login successful!")
+            messages.success(request=request, message=_("Login successful!"))
             return redirect('/')
         else:
-            messages.error(request=request, message="Login failed!")
+            messages.error(request=request, message=_("Login failed!"))
     context = {
         'email': email if 'email' in locals() else '',
         'password': password if 'password' in locals() else '',
@@ -97,7 +101,7 @@ def login(request):
 @login_required(login_url="login")
 def logout(request):
     auth.logout(request)
-    messages.success(request=request, message="You are logged out!")
+    messages.success(request=request, message=_("You are logged out!"))
     return redirect('login')
 
 
@@ -107,7 +111,7 @@ def forgot_password(request):
             email = request.POST.get('email')
             user = Account.objects.get(email__exact=email)
             current_site = get_current_site(request=request)
-            mail_subject = 'Reset your password'
+            mail_subject = _('Reset your password')
             message = render_to_string('accounts/reset_password_email.html', {
                 'user': user,
                 'domain': current_site.domain,
@@ -117,9 +121,9 @@ def forgot_password(request):
             send_email = EmailMessage(mail_subject, message, to=[email])
             send_email.send()
             messages.success(
-                request=request, message="Password reset email has been sent to your email address")
-    except Exception:
-        messages.error(request=request, message="Account does not exist!")
+                request=request, message=_("Password reset email has been sent to your email address"))
+    except Account.DoesNotExist:
+        messages.error(request=request, message=_("Account does not exist!"))
     finally:
         context = {
             'email': email if 'email' in locals() else '',
@@ -137,10 +141,10 @@ def reset_password(request):
             user = Account.objects.get(pk=uid)
             user.set_password(password)
             user.save()
-            messages.success(request, message="Password reset successful!")
+            messages.success(request, message=_("Password reset successful!"))
             return redirect('login')
         else:
-            messages.error(request, message="Password do not match!")
+            messages.error(request, message=_("Password do not match!"))
     return render(request, 'accounts/reset_password.html')
 
 
@@ -148,13 +152,14 @@ def reset_password_validate(request, uidb64, token):
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
         user = Account.objects.get(pk=uid)
-    except Exception:
+    except Account.DoesNotExist:
         user = None
 
     if user is not None and default_token_generator.check_token(user, token):
         request.session['uid'] = uid
-        messages.info(request=request, message='Please reset your password')
+        messages.info(request=request, message=_('Please reset your password'))
         return redirect('reset_password')
     else:
-        messages.error(request=request, message="This link has been expired!")
+        messages.error(request=request, message=_(
+            "This link has been expired!"))
         return redirect('/')

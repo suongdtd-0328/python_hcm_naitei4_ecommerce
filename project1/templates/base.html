@@ -1,6 +1,8 @@
 {% load static %}
+{% load i18n %}
+
 <!DOCTYPE HTML>
-<html lang= {{LANGUAGE_CODE}} >
+<html lang={{LANGUAGE_CODE}}>
 
 <head>
   <meta charset="utf-8">
@@ -8,17 +10,31 @@
   <meta http-equiv="cache-control" content="max-age=604800" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>OB Online Shopping</title>
+  <title>{%trans "Odinal Banwol Shopping" %}</title>
 
   <!-- Bootstrap4 files-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+  <!-- Font awesome 5 -->
+  <link href="{% static 'fonts/fontawesome/css/all.min.css' %}" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+    });
+  </script>
 </head>
 
 <body>
+  {% include 'includes/navbar.html' %}
+
   {% block content %}
 
   {% endblock %}
+
+  {% include 'includes/footer.html' %}
 </body>
 
 </html>

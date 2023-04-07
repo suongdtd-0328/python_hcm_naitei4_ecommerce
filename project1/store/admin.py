@@ -1,3 +1,4 @@
+from django.utils.translation import gettext as _
 from django.contrib import admin
 from .models import Product, ProductImage
 # Register your models here.
@@ -9,8 +10,8 @@ class ProductImageInline(admin.TabularInline):
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('product_name', 'price', 'category',
-                    'created_date', 'modified_date', 'is_available')
+    list_display = (_('product_name'), _('price'), _('category'),
+                    _('created_date'), _('modified_date'), _('is_available'))
     prepopulated_fields = {'slug': ('product_name',)}
     inlines = [ProductImageInline]
 
