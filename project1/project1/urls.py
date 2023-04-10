@@ -29,13 +29,14 @@ urlpatterns = [
     path('', RedirectView.as_view(url='home/')),
     path('store/', include('store.urls')),
     path('accounts/', include('accounts.urls')),
-    path('', set_language, name='set_language'),
+    path('/', set_language, name='set_language'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += i18n_patterns(
     path('home/', views.home, name='home'),
+    path('', RedirectView.as_view(url='home/')),
     path('store/', include('store.urls')),
     path('accounts/', include('accounts.urls')),
-    prefix_default_language=True,
+    prefix_default_language=False,
 )

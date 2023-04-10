@@ -3,7 +3,7 @@
 {% load i18n %}
 
 {% block content %}
-<section class="section-intro padding-y-sm">
+<section class="section-intro padding-y-sm p-2">
   <div class="container">
     <div class="intro-banner-wrap">
       {% include "includes/alerts.html" %}
@@ -12,19 +12,19 @@
   </div>
 </section>
 
-<section class="section-name padding-y-sm">
+<section class="section-name padding-y-sm p-2">
   <div class="container">
     <header class="section-heading">
       <a href="{% url 'store' %}" class="btn btn-outline-primary float-right">{% trans "See all" %}</a>
       <h3 class="section-title">{% trans "Popular products" %}</h3>
     </header>
 
-    <div class="row">
+    <div class="row pt-2 pb-2">
       {% for product in products %}
       <div class="col-md-3">
-        <div class="card card-product-grid">
+        <div class="card card-product-grid m-1">
           <a href="{{ product.get_url }}" class="img-wrap"> 
-            <img src="{{ product.productimage_set.first.product_image.url }}" class="img-fluid"></a>
+          <img src="{{ product.get_images.0.product_image.url }}" alt="{{ product.product_name }}" class="img-fluid">
           <figcaption class="info-wrap">
             <a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a>
             <div class="price mt-1">{{ product.price }}K</div>
