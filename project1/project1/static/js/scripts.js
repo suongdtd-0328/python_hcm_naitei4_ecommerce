@@ -32,4 +32,8 @@ $(document).ready(function () {
 
 setTimeout(() => {
 	$("#alert-messages").fadeOut("slow");
+<<<<<<< HEAD
 }, 4000);
+=======
+}, 4000);
+>>>>>>> a306e40 (Add store, product detail templates)

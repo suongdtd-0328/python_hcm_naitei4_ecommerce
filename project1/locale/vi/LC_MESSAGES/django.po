@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-07 14:30+0700\n"
+"POT-Creation-Date: 2023-04-10 22:24+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
 #: .\accounts\admin.py:8 .\accounts\admin.py:11
 msgid "email"
 msgstr "Email"
@@ -41,7 +42,7 @@ msgstr "Đăng nhập lần cuối"
 msgid "date_joined"
 msgstr "Ngày tham gia"
 
-#: .\accounts\admin.py:9
+#: .\accounts\admin.py:9 .\carts\admin.py:11
 msgid "is_active"
 msgstr "Hoạt động"
 
@@ -189,6 +190,76 @@ msgstr "Hãy đặt lại mật khẩu của bạn"
 msgid "This link has been expired!"
 msgstr "Liên kết đã hết hạn!"
 
+#: .\carts\admin.py:7
+msgid "cart_id"
+msgstr "cart_id"
+
+#: .\carts\admin.py:7
+#, fuzzy
+#| msgid "date_joined"
+msgid "date_added"
+msgstr "Ngày tham gia"
+
+#: .\carts\admin.py:11
+#, fuzzy
+#| msgid "Product"
+msgid "product"
+msgstr "Sản phẩm"
+
+#: .\carts\admin.py:11
+msgid "cart"
+msgstr "giỏ hàng"
+
+#: .\carts\admin.py:11
+msgid "quantity"
+msgstr "số lượng"
+
+#: .\carts\models.py:9
+msgid "Cart ID"
+msgstr "Cart ID"
+
+#: .\carts\models.py:11
+msgid "Date added"
+msgstr "Ngày thêm"
+
+#: .\carts\models.py:13
+msgid "Total"
+msgstr "Tổng"
+
+#: .\carts\models.py:19 .\carts\models.py:29
+msgid "Cart"
+msgstr "Giỏ hàng"
+
+#: .\carts\models.py:20
+msgid "Carts"
+msgstr "Các giỏ hàng"
+
+#: .\carts\models.py:25
+msgid "Account"
+msgstr "Tài khoản"
+
+#: .\carts\models.py:27 .\store\models.py:27 .\store\models.py:44
+msgid "Product"
+msgstr "Sản phẩm"
+
+#: .\carts\models.py:30 .\templates\store\product_detail.html:51
+msgid "Quantity"
+msgstr "Số lượng"
+
+#: .\carts\models.py:31
+#, fuzzy
+#| msgid "is active"
+msgid "Is active"
+msgstr "Hoạt động"
+
+#: .\carts\models.py:40
+msgid "Cart item"
+msgstr "Sản phẩm trong giỏ hàng"
+
+#: .\carts\models.py:41
+msgid "Cart items"
+msgstr "Các sản phẩm trong giỏ hàng"
+
 #: .\category\admin.py:9
 msgid "category_name"
 msgstr "Tên danh mục"
@@ -205,17 +276,26 @@ msgstr "parent"
 msgid "Category Name"
 msgstr "Tên danh mục"
 
-#: .\category\models.py:11 .\store\models.py:12
+#: .\category\models.py:11 .\store\models.py:13
+#: .\templates\store\product_detail.html:46
 msgid "Description"
 msgstr "Mô tả"
 
-#: .\category\models.py:18 .\store\admin.py:13
+#: .\category\models.py:20 .\store\admin.py:13
 msgid "category"
 msgstr "danh mục"
 
-#: .\category\models.py:19
+#: .\category\models.py:21
 msgid "categories"
 msgstr "Các danh mục"
+
+#: .\project1\settings.py:139 .\templates\includes\navbar.html:25
+msgid "Vietnamese"
+msgstr "Tiếng Việt"
+
+#: .\project1\settings.py:140 .\templates\includes\navbar.html:21
+msgid "English"
+msgstr "Tiếng Anh"
 
 #: .\store\admin.py:13
 msgid "product_name"
@@ -237,47 +317,43 @@ msgstr "Ngày chỉnh sửa"
 msgid "is_available"
 msgstr "Có sẵn"
 
-#: .\store\models.py:8
+#: .\store\models.py:9
 msgid "Slug"
 msgstr "Slug"
 
-#: .\store\models.py:10
+#: .\store\models.py:11
 msgid "Product_Name"
 msgstr "Tên sản phẩm"
 
-#: .\store\models.py:13
+#: .\store\models.py:14 .\templates\store\product_detail.html:44
 msgid "Price"
 msgstr "Giá"
 
-#: .\store\models.py:15
+#: .\store\models.py:16
 msgid "Is_Available"
 msgstr "Có sẵn"
 
-#: .\store\models.py:17
+#: .\store\models.py:19
 msgid "Created_Date"
 msgstr "Ngày tạo"
 
-#: .\store\models.py:19
+#: .\store\models.py:21
 msgid "Modified_Date"
 msgstr "Ngày chỉnh sửa"
 
-#: .\store\models.py:22
+#: .\store\models.py:24 .\templates\store\product_detail.html:48
 msgid "Category"
 msgstr "Danh mục"
 
-#: .\store\models.py:25 .\store\models.py:36
-msgid "Product"
-msgstr "Sản phẩm"
-
-#: .\store\models.py:26
+#: .\store\models.py:28
 msgid "Products"
 msgstr "Các sản phẩm"
 
-#: .\store\models.py:34 .\store\models.py:39
+#: .\store\models.py:42 .\store\models.py:47
 msgid "Product_Image"
 msgstr "Hình ảnh sane phẩm"
 
-#: .\store\models.py:40
+#: .\store\models.py:48
 msgid "Product_Images"
 msgstr "Các ảnh sản phẩm"
 
@@ -294,7 +370,7 @@ msgid "Forgot password"
 msgstr "Quên mật khẩu"
 
 #: .\templates\accounts\forgot_password.html:15
-#: .\templates\accounts\login.html:15
+#: .\templates\accounts\login.html:14
 msgid "Email Address"
 msgstr "Địa chỉ email là bắt buộc"
 
@@ -302,25 +378,25 @@ msgstr "Địa chỉ email là bắt buộc"
 msgid "Submit"
 msgstr "Gửi"
 
-#: .\templates\accounts\forgot_password.html:31
-#: .\templates\accounts\login.html:33
+#: .\templates\accounts\forgot_password.html:29
+#: .\templates\accounts\login.html:31
 msgid "Don't have account?"
 msgstr "Chưa có tài khoản?"
 
-#: .\templates\accounts\forgot_password.html:31
-#: .\templates\accounts\login.html:33 .\templates\accounts\register.html:10
+#: .\templates\accounts\forgot_password.html:29
+#: .\templates\accounts\login.html:31 .\templates\accounts\register.html:10
 msgid "Sign up"
 msgstr "Đăng ký"
 
-#: .\templates\accounts\login.html:10
+#: .\templates\accounts\login.html:9
 msgid "Sign in"
 msgstr "Đăng nhập"
 
-#: .\templates\accounts\login.html:27
+#: .\templates\accounts\login.html:26
 msgid "Login"
 msgstr "Đăng nhập"
 
-#: .\templates\accounts\logout.html:1 .\templates\includes\navbar.html:86
+#: .\templates\accounts\logout.html:1 .\templates\includes\navbar.html:87
 msgid "Logout"
 msgstr "Đăng xuất"
 
@@ -348,7 +424,7 @@ msgstr "Tạo mật khẩu"
 msgid "Repeat password"
 msgstr "Xác nhận mật khẩu"
 
-#: .\templates\accounts\register.html:45 .\templates\includes\navbar.html:78
+#: .\templates\accounts\register.html:45 .\templates\includes\navbar.html:79
 msgid "Register"
 msgstr "Đăng ký"
 
@@ -396,34 +472,99 @@ msgstr ""
 msgid "Call us"
 msgstr "Gọi cho chúng tôi"
 
-#: .\templates\includes\navbar.html:21
-msgid "English"
-msgstr "Tiếng Anh"
-
-#: .\templates\includes\navbar.html:25
-msgid "Vietnamese"
-msgstr "Tiếng Việt"
-
-#: .\templates\includes\navbar.html:44
+#: .\templates\includes\navbar.html:45
 msgid "All category"
 msgstr "Tất cả danh mục"
 
-#: .\templates\includes\navbar.html:48
+#: .\templates\includes\navbar.html:49 .\templates\store\store.html:29
 msgid "All products"
 msgstr "Tất cả sản phẩm"
 
-#: .\templates\includes\navbar.html:56
+#: .\templates\includes\navbar.html:57
 msgid "Store"
 msgstr "Cửa hàng"
 
-#: .\templates\includes\navbar.html:75
+#: .\templates\includes\navbar.html:76
 msgid "Welcome guest!"
 msgstr "Chào mừng khách!"
 
-#: .\templates\includes\navbar.html:77
+#: .\templates\includes\navbar.html:78
 msgid "Log in"
 msgstr "Đăng nhập"
 
-#: .\templates\includes\navbar.html:84
+#: .\templates\includes\navbar.html:85
 msgid "Welcome"
 msgstr "Chào mừng"
+
+#: .\templates\store\product_detail.html:57
+#: .\templates\store\product_detail.html:68
+msgid "Add to cart"
+msgstr "Thêm vào giỏ hàng"
+
+#: .\templates\store\product_detail.html:61
+msgid "Show cart"
+msgstr "Xem giỏ hàng"
+
+#: .\templates\store\product_detail.html:72
+msgid "Out of Stock"
+msgstr "Hết hàng"
+
+#: .\templates\store\store.html:9
+#, fuzzy
+#| msgid "Store"
+msgid "Our Store"
+msgstr "Cửa hàng"
+
+#: .\templates\store\store.html:21
+#, fuzzy
+#| msgid "categories"
+msgid "Categories"
+msgstr "Các danh mục"
+
+#: .\templates\store\store.html:44
+#, fuzzy
+#| msgid "Price"
+msgid "Price range"
+msgstr "Giá"
+
+#: .\templates\store\store.html:72
+msgid "Apply"
+msgstr "Áp dụng"
+
+#: .\templates\store\store.html:83
+msgid "Found"
+msgstr "Tìm thấy"
+
+#: .\templates\store\store.html:83
+msgid "Items"
+msgstr "Mục"
+
+#: .\templates\store\store.html:96
+#, fuzzy
+#| msgid "is_available"
+msgid "No image available"
+msgstr "Có sẵn"
+
+#: .\templates\store\store.html:106
+msgid "View detail"
+msgstr "Xem chi tiết"
+
+#: .\templates\store\store.html:118 .\templates\store\store.html:126
+#, fuzzy
+#| msgid "First name"
+msgid "First"
+msgstr "Tên"
+
+#: .\templates\store\store.html:122 .\templates\store\store.html:129
+msgid "Previous"
+msgstr "Trước"
+
+#: .\templates\store\store.html:157 .\templates\store\store.html:165
+msgid "Next"
+msgstr "Tiếp"
+
+#: .\templates\store\store.html:161 .\templates\store\store.html:168
+#, fuzzy
+#| msgid "Last name"
+msgid "Last"
+msgstr "Họ"

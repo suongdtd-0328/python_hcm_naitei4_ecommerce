@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-07 14:30+0700\n"
+"POT-Creation-Date: 2023-04-10 22:24+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: .\accounts\admin.py:8 .\accounts\admin.py:11
 msgid "email"
 msgstr ""
@@ -41,7 +42,7 @@ msgstr ""
 msgid "date_joined"
 msgstr ""
 
-#: .\accounts\admin.py:9
+#: .\accounts\admin.py:9 .\carts\admin.py:11
 msgid "is_active"
 msgstr ""
 
@@ -189,6 +190,70 @@ msgstr ""
 msgid "This link has been expired!"
 msgstr ""
 
+#: .\carts\admin.py:7
+msgid "cart_id"
+msgstr ""
+
+#: .\carts\admin.py:7
+msgid "date_added"
+msgstr ""
+
+#: .\carts\admin.py:11
+msgid "product"
+msgstr ""
+
+#: .\carts\admin.py:11
+msgid "cart"
+msgstr ""
+
+#: .\carts\admin.py:11
+msgid "quantity"
+msgstr ""
+
+#: .\carts\models.py:9
+msgid "Cart ID"
+msgstr ""
+
+#: .\carts\models.py:11
+msgid "Date added"
+msgstr ""
+
+#: .\carts\models.py:13
+msgid "Total"
+msgstr ""
+
+#: .\carts\models.py:19 .\carts\models.py:29
+msgid "Cart"
+msgstr ""
+
+#: .\carts\models.py:20
+msgid "Carts"
+msgstr ""
+
+#: .\carts\models.py:25
+msgid "Account"
+msgstr ""
+
+#: .\carts\models.py:27 .\store\models.py:27 .\store\models.py:44
+msgid "Product"
+msgstr ""
+
+#: .\carts\models.py:30 .\templates\store\product_detail.html:51
+msgid "Quantity"
+msgstr ""
+
+#: .\carts\models.py:31
+msgid "Is active"
+msgstr ""
+
+#: .\carts\models.py:40
+msgid "Cart item"
+msgstr ""
+
+#: .\carts\models.py:41
+msgid "Cart items"
+msgstr ""
+
 #: .\category\admin.py:9
 msgid "category_name"
 msgstr ""
@@ -205,16 +270,25 @@ msgstr ""
 msgid "Category Name"
 msgstr ""
 
-#: .\category\models.py:11 .\store\models.py:12
+#: .\category\models.py:11 .\store\models.py:13
+#: .\templates\store\product_detail.html:46
 msgid "Description"
 msgstr ""
 
-#: .\category\models.py:18 .\store\admin.py:13
+#: .\category\models.py:20 .\store\admin.py:13
 msgid "category"
 msgstr ""
 
-#: .\category\models.py:19
+#: .\category\models.py:21
 msgid "categories"
+msgstr ""
+
+#: .\project1\settings.py:139 .\templates\includes\navbar.html:25
+msgid "Vietnamese"
+msgstr ""
+
+#: .\project1\settings.py:140 .\templates\includes\navbar.html:21
+msgid "English"
 msgstr ""
 
 #: .\store\admin.py:13
@@ -237,47 +311,43 @@ msgstr ""
 msgid "is_available"
 msgstr ""
 
-#: .\store\models.py:8
+#: .\store\models.py:9
 msgid "Slug"
 msgstr ""
 
-#: .\store\models.py:10
+#: .\store\models.py:11
 msgid "Product_Name"
 msgstr ""
 
-#: .\store\models.py:13
+#: .\store\models.py:14 .\templates\store\product_detail.html:44
 msgid "Price"
 msgstr ""
 
-#: .\store\models.py:15
+#: .\store\models.py:16
 msgid "Is_Available"
 msgstr ""
 
-#: .\store\models.py:17
+#: .\store\models.py:19
 msgid "Created_Date"
 msgstr ""
 
-#: .\store\models.py:19
+#: .\store\models.py:21
 msgid "Modified_Date"
 msgstr ""
 
-#: .\store\models.py:22
+#: .\store\models.py:24 .\templates\store\product_detail.html:48
 msgid "Category"
 msgstr ""
 
-#: .\store\models.py:25 .\store\models.py:36
-msgid "Product"
-msgstr ""
-
-#: .\store\models.py:26
+#: .\store\models.py:28
 msgid "Products"
 msgstr ""
 
-#: .\store\models.py:34 .\store\models.py:39
+#: .\store\models.py:42 .\store\models.py:47
 msgid "Product_Image"
 msgstr ""
 
-#: .\store\models.py:40
+#: .\store\models.py:48
 msgid "Product_Images"
 msgstr ""
 
@@ -294,7 +364,7 @@ msgid "Forgot password"
 msgstr ""
 
 #: .\templates\accounts\forgot_password.html:15
-#: .\templates\accounts\login.html:15
+#: .\templates\accounts\login.html:14
 msgid "Email Address"
 msgstr ""
 
@@ -302,25 +372,25 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: .\templates\accounts\forgot_password.html:31
-#: .\templates\accounts\login.html:33
+#: .\templates\accounts\forgot_password.html:29
+#: .\templates\accounts\login.html:31
 msgid "Don't have account?"
 msgstr ""
 
-#: .\templates\accounts\forgot_password.html:31
-#: .\templates\accounts\login.html:33 .\templates\accounts\register.html:10
+#: .\templates\accounts\forgot_password.html:29
+#: .\templates\accounts\login.html:31 .\templates\accounts\register.html:10
 msgid "Sign up"
 msgstr ""
 
-#: .\templates\accounts\login.html:10
+#: .\templates\accounts\login.html:9
 msgid "Sign in"
 msgstr ""
 
-#: .\templates\accounts\login.html:27
+#: .\templates\accounts\login.html:26
 msgid "Login"
 msgstr ""
 
-#: .\templates\accounts\logout.html:1 .\templates\includes\navbar.html:86
+#: .\templates\accounts\logout.html:1 .\templates\includes\navbar.html:87
 msgid "Logout"
 msgstr ""
 
@@ -348,7 +418,7 @@ msgstr ""
 msgid "Repeat password"
 msgstr ""
 
-#: .\templates\accounts\register.html:45 .\templates\includes\navbar.html:78
+#: .\templates\accounts\register.html:45 .\templates\includes\navbar.html:79
 msgid "Register"
 msgstr ""
 
@@ -396,34 +466,87 @@ msgstr ""
 msgid "Call us"
 msgstr ""
 
-#: .\templates\includes\navbar.html:21
-msgid "English"
-msgstr ""
-
-#: .\templates\includes\navbar.html:25
-msgid "Vietnamese"
-msgstr ""
-
-#: .\templates\includes\navbar.html:44
+#: .\templates\includes\navbar.html:45
 msgid "All category"
 msgstr ""
 
-#: .\templates\includes\navbar.html:48
+#: .\templates\includes\navbar.html:49 .\templates\store\store.html:29
 msgid "All products"
 msgstr ""
 
-#: .\templates\includes\navbar.html:56
+#: .\templates\includes\navbar.html:57
 msgid "Store"
 msgstr ""
 
-#: .\templates\includes\navbar.html:75
+#: .\templates\includes\navbar.html:76
 msgid "Welcome guest!"
 msgstr ""
 
-#: .\templates\includes\navbar.html:77
+#: .\templates\includes\navbar.html:78
 msgid "Log in"
 msgstr ""
 
-#: .\templates\includes\navbar.html:84
+#: .\templates\includes\navbar.html:85
 msgid "Welcome"
+msgstr ""
+
+#: .\templates\store\product_detail.html:57
+#: .\templates\store\product_detail.html:68
+msgid "Add to cart"
+msgstr ""
+
+#: .\templates\store\product_detail.html:61
+msgid "Show cart"
+msgstr ""
+
+#: .\templates\store\product_detail.html:72
+msgid "Out of Stock"
+msgstr ""
+
+#: .\templates\store\store.html:9
+msgid "Our Store"
+msgstr ""
+
+#: .\templates\store\store.html:21
+msgid "Categories"
+msgstr ""
+
+#: .\templates\store\store.html:44
+msgid "Price range"
+msgstr ""
+
+#: .\templates\store\store.html:72
+msgid "Apply"
+msgstr ""
+
+#: .\templates\store\store.html:83
+msgid "Found"
+msgstr ""
+
+#: .\templates\store\store.html:83
+msgid "Items"
+msgstr ""
+
+#: .\templates\store\store.html:96
+msgid "No image available"
+msgstr ""
+
+#: .\templates\store\store.html:106
+msgid "View detail"
+msgstr ""
+
+#: .\templates\store\store.html:118 .\templates\store\store.html:126
+msgid "First"
+msgstr ""
+
+#: .\templates\store\store.html:122 .\templates\store\store.html:129
+msgid "Previous"
+msgstr ""
+
+#: .\templates\store\store.html:157 .\templates\store\store.html:165
+msgid "Next"
+msgstr ""
+
+#: .\templates\store\store.html:161 .\templates\store\store.html:168
+msgid "Last"
 msgstr ""
