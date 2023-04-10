@@ -1,0 +1,514 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-10 06:47+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\accounts\admin.py:8 .\accounts\admin.py:11
+msgid "email"
+msgstr "Email"
+
+#: .\accounts\admin.py:8 .\accounts\admin.py:11 .\accounts\models.py:50
+msgid "username"
+msgstr "Tên đăng nhập"
+
+#: .\accounts\admin.py:8 .\accounts\admin.py:12
+msgid "first_name"
+msgstr "Họ"
+
+#: .\accounts\admin.py:9 .\accounts\admin.py:12
+msgid "last_name"
+msgstr "Tên"
+
+#: .\accounts\admin.py:9 .\accounts\admin.py:13
+msgid "last_login"
+msgstr "Đăng nhập lần cuối"
+
+#: .\accounts\admin.py:9 .\accounts\admin.py:13
+msgid "date_joined"
+msgstr "Ngày tham gia"
+
+#: .\accounts\admin.py:9
+msgid "is_active"
+msgstr "Hoạt động"
+
+#: .\accounts\admin.py:14
+#, fuzzy
+#| msgid "date_joined"
+msgid "-date_joined"
+msgstr "Ngày tham gia"
+
+#: .\accounts\forms.py:14
+msgid "Enter password"
+msgstr "Nhập mật khẩu"
+
+#: .\accounts\forms.py:17
+msgid "Confirm password"
+msgstr "Xác nhận mật khẩu"
+
+#: .\accounts\forms.py:28
+msgid "Enter first name"
+msgstr "Nhập họ"
+
+#: .\accounts\forms.py:30
+msgid "Enter last name"
+msgstr "Nhập tên"
+
+#: .\accounts\forms.py:32
+msgid "Enter phone number"
+msgstr "Nhập số điện thoại"
+
+#: .\accounts\forms.py:33
+msgid "Enter email"
+msgstr "Nhập địa chỉ email"
+
+#: .\accounts\forms.py:52
+msgid "Password does not match!"
+msgstr "Mật khẩu không hợp lệ!"
+
+#: .\accounts\models.py:47
+msgid "first name"
+msgstr "Họ"
+
+#: .\accounts\models.py:48
+msgid "last name"
+msgstr "Tên"
+
+#: .\accounts\models.py:52
+msgid "email address"
+msgstr "Địa chỉ email"
+
+#: .\accounts\models.py:54
+msgid "phone number"
+msgstr "Số điện thoại"
+
+#: .\accounts\models.py:58
+msgid "date joined"
+msgstr "Ngày tham gia"
+
+#: .\accounts\models.py:60
+msgid "last login"
+msgstr "Đăng nhập lần cuối"
+
+#: .\accounts\models.py:61
+msgid "is active"
+msgstr "Hoạt động"
+
+#: .\accounts\models.py:62
+msgid "is staff"
+msgstr "Nhân viên"
+
+#: .\accounts\models.py:65
+msgid "User"
+msgstr "Người dùng"
+
+#: .\accounts\models.py:66
+msgid "Staff"
+msgstr "Nhân viên"
+
+#: .\accounts\models.py:67
+msgid "Admin"
+msgstr "Quản trị viên"
+
+#: .\accounts\models.py:68
+msgid "Superadmin"
+msgstr "Quản trị viên cap cấp"
+
+#: .\accounts\models.py:71
+msgid "role"
+msgstr "Vai trò"
+
+#: .\accounts\views.py:30
+msgid "Email has username already exists."
+msgstr "Email có username đã tồn tại."
+
+#: .\accounts\views.py:39
+msgid "Activate your account."
+msgstr "Kích hoạt tài khoản của bạn."
+
+#: .\accounts\views.py:51
+msgid "Please confirm your email address to complete the registration"
+msgstr "Hãy xác  nhận địa chỉ email của bạn để hoàn thành đăng kí"
+
+#: .\accounts\views.py:55
+msgid "Register failed!"
+msgstr "Đăng kí thất bại!"
+
+#: .\accounts\views.py:75
+msgid "Your account is activated, please login!"
+msgstr "Tài khoản của bạn đã được kích hoạt, vui lòng đăng nhập!"
+
+#: .\accounts\views.py:79
+msgid "Activation link is invalid!"
+msgstr "Liên kết kích hoạt không hợp lệ"
+
+#: .\accounts\views.py:90
+msgid "Login successful!"
+msgstr "Đăng nhập thành công!"
+
+#: .\accounts\views.py:93
+msgid "Login failed!"
+msgstr "Đăng nhập thất bại"
+
+#: .\accounts\views.py:104
+msgid "You are logged out!"
+msgstr "Bạn đã đăng xuất!"
+
+#: .\accounts\views.py:114
+msgid "Reset your password"
+msgstr "Nhập lại mật khẩu"
+
+#: .\accounts\views.py:124
+msgid "Password reset email has been sent to your email address"
+msgstr "Email đặt lại mật khẩu đã được gửi đến địa chỉ email của bạn"
+
+#: .\accounts\views.py:126
+msgid "Account does not exist!"
+msgstr "Tài khoản không tồn tại!"
+
+#: .\accounts\views.py:144
+msgid "Password reset successful!"
+msgstr "Đặt lại mật khẩu thành công!"
+
+#: .\accounts\views.py:147
+msgid "Password do not match!"
+msgstr "Mật khẩu không hợp lệ!"
+
+#: .\accounts\views.py:160
+msgid "Please reset your password"
+msgstr "Hãy đặt lại mật khẩu của bạn"
+
+#: .\accounts\views.py:164
+msgid "This link has been expired!"
+msgstr "Liên kết đã hết hạn!"
+
+#: .\category\admin.py:9
+msgid "category_name"
+msgstr "Tên danh mục"
+
+#: .\category\admin.py:9
+msgid "slug"
+msgstr "slug"
+
+#: .\category\admin.py:9
+msgid "parent"
+msgstr "parent"
+
+#: .\category\models.py:9
+msgid "Category Name"
+msgstr "Tên danh mục"
+
+#: .\category\models.py:11 .\store\models.py:13
+#: .\templates\store\product_detail.html:46
+msgid "Description"
+msgstr "Mô tả"
+
+#: .\category\models.py:20 .\store\admin.py:13
+msgid "category"
+msgstr "danh mục"
+
+#: .\category\models.py:21
+msgid "categories"
+msgstr "Các danh mục"
+
+#: .\project1\settings.py:134 .\templates\includes\navbar.html:25
+msgid "Vietnamese"
+msgstr "Tiếng Việt"
+
+#: .\project1\settings.py:135 .\templates\includes\navbar.html:21
+msgid "English"
+msgstr "Tiếng Anh"
+
+#: .\store\admin.py:13
+msgid "product_name"
+msgstr "Tên sản phẩm"
+
+#: .\store\admin.py:13
+msgid "price"
+msgstr "Giá"
+
+#: .\store\admin.py:14
+msgid "created_date"
+msgstr "Ngày tạo"
+
+#: .\store\admin.py:14
+msgid "modified_date"
+msgstr "Ngày chỉnh sửa"
+
+#: .\store\admin.py:14
+msgid "is_available"
+msgstr "Có sẵn"
+
+#: .\store\models.py:9
+msgid "Slug"
+msgstr "Slug"
+
+#: .\store\models.py:11
+msgid "Product_Name"
+msgstr "Tên sản phẩm"
+
+#: .\store\models.py:14 .\templates\store\product_detail.html:44
+msgid "Price"
+msgstr "Giá"
+
+#: .\store\models.py:16
+msgid "Is_Available"
+msgstr "Có sẵn"
+
+#: .\store\models.py:19
+msgid "Created_Date"
+msgstr "Ngày tạo"
+
+#: .\store\models.py:21
+msgid "Modified_Date"
+msgstr "Ngày chỉnh sửa"
+
+#: .\store\models.py:24 .\templates\store\product_detail.html:48
+msgid "Category"
+msgstr "Danh mục"
+
+#: .\store\models.py:27 .\store\models.py:44
+msgid "Product"
+msgstr "Sản phẩm"
+
+#: .\store\models.py:28
+msgid "Products"
+msgstr "Các sản phẩm"
+
+#: .\store\models.py:42 .\store\models.py:47
+msgid "Product_Image"
+msgstr "Hình ảnh sane phẩm"
+
+#: .\store\models.py:48
+msgid "Product_Images"
+msgstr "Các ảnh sản phẩm"
+
+#: .\templates\accounts\active_email.html:4
+msgid "Hi"
+msgstr "Xin chào"
+
+#: .\templates\accounts\active_email.html:5
+msgid "Please click on the link to confirm your registration, "
+msgstr "Vui lòng nhấn vào đường dẫn để xác nhận đăng ký của bạn, "
+
+#: .\templates\accounts\forgot_password.html:10
+msgid "Forgot password"
+msgstr "Quên mật khẩu"
+
+#: .\templates\accounts\forgot_password.html:15
+#: .\templates\accounts\login.html:14
+msgid "Email Address"
+msgstr "Địa chỉ email là bắt buộc"
+
+#: .\templates\accounts\forgot_password.html:24
+msgid "Submit"
+msgstr "Gửi"
+
+#: .\templates\accounts\forgot_password.html:29
+#: .\templates\accounts\login.html:31
+msgid "Don't have account?"
+msgstr "Chưa có tài khoản?"
+
+#: .\templates\accounts\forgot_password.html:29
+#: .\templates\accounts\login.html:31 .\templates\accounts\register.html:10
+msgid "Sign up"
+msgstr "Đăng ký"
+
+#: .\templates\accounts\login.html:9
+msgid "Sign in"
+msgstr "Đăng nhập"
+
+#: .\templates\accounts\login.html:26
+msgid "Login"
+msgstr "Đăng nhập"
+
+#: .\templates\accounts\logout.html:1 .\templates\includes\navbar.html:86
+msgid "Logout"
+msgstr "Đăng xuất"
+
+#: .\templates\accounts\register.html:17
+msgid "First name"
+msgstr "Tên"
+
+#: .\templates\accounts\register.html:21
+msgid "Last name"
+msgstr "Họ"
+
+#: .\templates\accounts\register.html:27 .\templates\includes\navbar.html:14
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\accounts\register.html:31
+msgid "Phone number"
+msgstr "Số điện thoại"
+
+#: .\templates\accounts\register.html:37
+msgid "Create password"
+msgstr "Tạo mật khẩu"
+
+#: .\templates\accounts\register.html:40
+msgid "Repeat password"
+msgstr "Xác nhận mật khẩu"
+
+#: .\templates\accounts\register.html:45 .\templates\includes\navbar.html:78
+msgid "Register"
+msgstr "Đăng ký"
+
+#: .\templates\accounts\reset_password.html:14
+msgid "New password"
+msgstr "Mật khẩu mới"
+
+#: .\templates\accounts\reset_password.html:22
+msgid "Reset"
+msgstr "Đặt lại"
+
+#: .\templates\accounts\reset_password_email.html:3
+msgid "Please click on the link to reset password of your account,"
+msgstr "Vui lòng nhấn vào đường dẫn để đặt lại mật khẩu của bạn,"
+
+#: .\templates\base.html:13
+msgid "Odinal Banwol Shopping"
+msgstr "Cửa hàng Odinal Banwol"
+
+#: .\templates\home.html:18
+msgid "See all"
+msgstr "Xem tất cả"
+
+#: .\templates\home.html:19
+msgid "Popular products"
+msgstr "Sản phẩm phổ biến"
+
+#: .\templates\includes\footer.html:8
+msgid "&copy 2023 Company"
+msgstr ""
+
+#: .\templates\includes\footer.html:12
+msgid "odinalbanwol@gmail.com"
+msgstr ""
+
+#: .\templates\includes\footer.html:13
+msgid "+987654321"
+msgstr ""
+
+#: .\templates\includes\footer.html:14
+msgid "Topaz Home 2, Tan Phu, Quan 9, TPHCM"
+msgstr ""
+
+#: .\templates\includes\navbar.html:15
+msgid "Call us"
+msgstr "Gọi cho chúng tôi"
+
+#: .\templates\includes\navbar.html:44
+msgid "All category"
+msgstr "Tất cả danh mục"
+
+#: .\templates\includes\navbar.html:48 .\templates\store\store.html:29
+msgid "All products"
+msgstr "Tất cả sản phẩm"
+
+#: .\templates\includes\navbar.html:56
+msgid "Store"
+msgstr "Cửa hàng"
+
+#: .\templates\includes\navbar.html:75
+msgid "Welcome guest!"
+msgstr "Chào mừng khách!"
+
+#: .\templates\includes\navbar.html:77
+msgid "Log in"
+msgstr "Đăng nhập"
+
+#: .\templates\includes\navbar.html:84
+msgid "Welcome"
+msgstr "Chào mừng"
+
+#: .\templates\store\product_detail.html:52
+msgid "Quantity"
+msgstr "Số lượng"
+
+#: .\templates\store\product_detail.html:59
+#: .\templates\store\product_detail.html:68
+msgid "Add to cart"
+msgstr "Thêm vào giỏ hàng"
+
+#: .\templates\store\product_detail.html:63
+msgid "Show cart"
+msgstr "Xem giỏ hàng"
+
+#: .\templates\store\product_detail.html:72
+msgid "Out of Stock"
+msgstr "Hết Hàng"
+
+#: .\templates\store\store.html:9
+#, fuzzy
+#| msgid "Store"
+msgid "Our Store"
+msgstr "Cửa hàng"
+
+#: .\templates\store\store.html:21
+#, fuzzy
+#| msgid "categories"
+msgid "Categories"
+msgstr "Các danh mục"
+
+#: .\templates\store\store.html:44
+#, fuzzy
+#| msgid "Price"
+msgid "Price range"
+msgstr "Giá"
+
+#: .\templates\store\store.html:72
+msgid "Apply"
+msgstr "Áp dụng"
+
+#: .\templates\store\store.html:83
+msgid "Found"
+msgstr "Tìm thấy"
+
+#: .\templates\store\store.html:83
+msgid "Items"
+msgstr "Sản phẩm"
+
+#: .\templates\store\store.html:96
+#, fuzzy
+#| msgid "is_available"
+msgid "No image available"
+msgstr "Có sẵn"
+
+#: .\templates\store\store.html:106
+msgid "View detail"
+msgstr "Xem chi tiết"
+
+#: .\templates\store\store.html:118 .\templates\store\store.html:126
+#, fuzzy
+#| msgid "First name"
+msgid "First"
+msgstr "Trước"
+
+#: .\templates\store\store.html:122 .\templates\store\store.html:129
+msgid "Previous"
+msgstr "Sau"
+
+#: .\templates\store\store.html:157 .\templates\store\store.html:165
+msgid "Next"
+msgstr "Tiếp"
+
+#: .\templates\store\store.html:161 .\templates\store\store.html:168
+#, fuzzy
+#| msgid "Last name"
+msgid "Last"
+msgstr "Cuối"
