@@ -1,0 +1,499 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-10 06:47+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\accounts\admin.py:8 .\accounts\admin.py:11
+msgid "email"
+msgstr ""
+
+#: .\accounts\admin.py:8 .\accounts\admin.py:11 .\accounts\models.py:50
+msgid "username"
+msgstr ""
+
+#: .\accounts\admin.py:8 .\accounts\admin.py:12
+msgid "first_name"
+msgstr ""
+
+#: .\accounts\admin.py:9 .\accounts\admin.py:12
+msgid "last_name"
+msgstr ""
+
+#: .\accounts\admin.py:9 .\accounts\admin.py:13
+msgid "last_login"
+msgstr ""
+
+#: .\accounts\admin.py:9 .\accounts\admin.py:13
+msgid "date_joined"
+msgstr ""
+
+#: .\accounts\admin.py:9
+msgid "is_active"
+msgstr ""
+
+#: .\accounts\admin.py:14
+msgid "-date_joined"
+msgstr ""
+
+#: .\accounts\forms.py:14
+msgid "Enter password"
+msgstr ""
+
+#: .\accounts\forms.py:17
+msgid "Confirm password"
+msgstr ""
+
+#: .\accounts\forms.py:28
+msgid "Enter first name"
+msgstr ""
+
+#: .\accounts\forms.py:30
+msgid "Enter last name"
+msgstr ""
+
+#: .\accounts\forms.py:32
+msgid "Enter phone number"
+msgstr ""
+
+#: .\accounts\forms.py:33
+msgid "Enter email"
+msgstr ""
+
+#: .\accounts\forms.py:52
+msgid "Password does not match!"
+msgstr ""
+
+#: .\accounts\models.py:47
+msgid "first name"
+msgstr ""
+
+#: .\accounts\models.py:48
+msgid "last name"
+msgstr ""
+
+#: .\accounts\models.py:52
+msgid "email address"
+msgstr ""
+
+#: .\accounts\models.py:54
+msgid "phone number"
+msgstr ""
+
+#: .\accounts\models.py:58
+msgid "date joined"
+msgstr ""
+
+#: .\accounts\models.py:60
+msgid "last login"
+msgstr ""
+
+#: .\accounts\models.py:61
+msgid "is active"
+msgstr ""
+
+#: .\accounts\models.py:62
+msgid "is staff"
+msgstr ""
+
+#: .\accounts\models.py:65
+msgid "User"
+msgstr ""
+
+#: .\accounts\models.py:66
+msgid "Staff"
+msgstr ""
+
+#: .\accounts\models.py:67
+msgid "Admin"
+msgstr ""
+
+#: .\accounts\models.py:68
+msgid "Superadmin"
+msgstr ""
+
+#: .\accounts\models.py:71
+msgid "role"
+msgstr ""
+
+#: .\accounts\views.py:30
+msgid "Email has username already exists."
+msgstr ""
+
+#: .\accounts\views.py:39
+msgid "Activate your account."
+msgstr ""
+
+#: .\accounts\views.py:51
+msgid "Please confirm your email address to complete the registration"
+msgstr ""
+
+#: .\accounts\views.py:55
+msgid "Register failed!"
+msgstr ""
+
+#: .\accounts\views.py:75
+msgid "Your account is activated, please login!"
+msgstr ""
+
+#: .\accounts\views.py:79
+msgid "Activation link is invalid!"
+msgstr ""
+
+#: .\accounts\views.py:90
+msgid "Login successful!"
+msgstr ""
+
+#: .\accounts\views.py:93
+msgid "Login failed!"
+msgstr ""
+
+#: .\accounts\views.py:104
+msgid "You are logged out!"
+msgstr ""
+
+#: .\accounts\views.py:114
+msgid "Reset your password"
+msgstr ""
+
+#: .\accounts\views.py:124
+msgid "Password reset email has been sent to your email address"
+msgstr ""
+
+#: .\accounts\views.py:126
+msgid "Account does not exist!"
+msgstr ""
+
+#: .\accounts\views.py:144
+msgid "Password reset successful!"
+msgstr ""
+
+#: .\accounts\views.py:147
+msgid "Password do not match!"
+msgstr ""
+
+#: .\accounts\views.py:160
+msgid "Please reset your password"
+msgstr ""
+
+#: .\accounts\views.py:164
+msgid "This link has been expired!"
+msgstr ""
+
+#: .\category\admin.py:9
+msgid "category_name"
+msgstr ""
+
+#: .\category\admin.py:9
+msgid "slug"
+msgstr ""
+
+#: .\category\admin.py:9
+msgid "parent"
+msgstr ""
+
+#: .\category\models.py:9
+msgid "Category Name"
+msgstr ""
+
+#: .\category\models.py:11 .\store\models.py:13
+#: .\templates\store\product_detail.html:46
+msgid "Description"
+msgstr ""
+
+#: .\category\models.py:20 .\store\admin.py:13
+msgid "category"
+msgstr ""
+
+#: .\category\models.py:21
+msgid "categories"
+msgstr ""
+
+#: .\project1\settings.py:134 .\templates\includes\navbar.html:25
+msgid "Vietnamese"
+msgstr ""
+
+#: .\project1\settings.py:135 .\templates\includes\navbar.html:21
+msgid "English"
+msgstr ""
+
+#: .\store\admin.py:13
+msgid "product_name"
+msgstr ""
+
+#: .\store\admin.py:13
+msgid "price"
+msgstr ""
+
+#: .\store\admin.py:14
+msgid "created_date"
+msgstr ""
+
+#: .\store\admin.py:14
+msgid "modified_date"
+msgstr ""
+
+#: .\store\admin.py:14
+msgid "is_available"
+msgstr ""
+
+#: .\store\models.py:9
+msgid "Slug"
+msgstr ""
+
+#: .\store\models.py:11
+msgid "Product_Name"
+msgstr ""
+
+#: .\store\models.py:14 .\templates\store\product_detail.html:44
+msgid "Price"
+msgstr ""
+
+#: .\store\models.py:16
+msgid "Is_Available"
+msgstr ""
+
+#: .\store\models.py:19
+msgid "Created_Date"
+msgstr ""
+
+#: .\store\models.py:21
+msgid "Modified_Date"
+msgstr ""
+
+#: .\store\models.py:24 .\templates\store\product_detail.html:48
+msgid "Category"
+msgstr ""
+
+#: .\store\models.py:27 .\store\models.py:44
+msgid "Product"
+msgstr ""
+
+#: .\store\models.py:28
+msgid "Products"
+msgstr ""
+
+#: .\store\models.py:42 .\store\models.py:47
+msgid "Product_Image"
+msgstr ""
+
+#: .\store\models.py:48
+msgid "Product_Images"
+msgstr ""
+
+#: .\templates\accounts\active_email.html:4
+msgid "Hi"
+msgstr ""
+
+#: .\templates\accounts\active_email.html:5
+msgid "Please click on the link to confirm your registration, "
+msgstr ""
+
+#: .\templates\accounts\forgot_password.html:10
+msgid "Forgot password"
+msgstr ""
+
+#: .\templates\accounts\forgot_password.html:15
+#: .\templates\accounts\login.html:14
+msgid "Email Address"
+msgstr ""
+
+#: .\templates\accounts\forgot_password.html:24
+msgid "Submit"
+msgstr ""
+
+#: .\templates\accounts\forgot_password.html:29
+#: .\templates\accounts\login.html:31
+msgid "Don't have account?"
+msgstr ""
+
+#: .\templates\accounts\forgot_password.html:29
+#: .\templates\accounts\login.html:31 .\templates\accounts\register.html:10
+msgid "Sign up"
+msgstr ""
+
+#: .\templates\accounts\login.html:9
+msgid "Sign in"
+msgstr ""
+
+#: .\templates\accounts\login.html:26
+msgid "Login"
+msgstr ""
+
+#: .\templates\accounts\logout.html:1 .\templates\includes\navbar.html:86
+msgid "Logout"
+msgstr ""
+
+#: .\templates\accounts\register.html:17
+msgid "First name"
+msgstr ""
+
+#: .\templates\accounts\register.html:21
+msgid "Last name"
+msgstr ""
+
+#: .\templates\accounts\register.html:27 .\templates\includes\navbar.html:14
+msgid "Email"
+msgstr ""
+
+#: .\templates\accounts\register.html:31
+msgid "Phone number"
+msgstr ""
+
+#: .\templates\accounts\register.html:37
+msgid "Create password"
+msgstr ""
+
+#: .\templates\accounts\register.html:40
+msgid "Repeat password"
+msgstr ""
+
+#: .\templates\accounts\register.html:45 .\templates\includes\navbar.html:78
+msgid "Register"
+msgstr ""
+
+#: .\templates\accounts\reset_password.html:14
+msgid "New password"
+msgstr ""
+
+#: .\templates\accounts\reset_password.html:22
+msgid "Reset"
+msgstr ""
+
+#: .\templates\accounts\reset_password_email.html:3
+msgid "Please click on the link to reset password of your account,"
+msgstr ""
+
+#: .\templates\base.html:13
+msgid "Odinal Banwol Shopping"
+msgstr ""
+
+#: .\templates\home.html:18
+msgid "See all"
+msgstr ""
+
+#: .\templates\home.html:19
+msgid "Popular products"
+msgstr ""
+
+#: .\templates\includes\footer.html:8
+msgid "&copy 2023 Company"
+msgstr ""
+
+#: .\templates\includes\footer.html:12
+msgid "odinalbanwol@gmail.com"
+msgstr ""
+
+#: .\templates\includes\footer.html:13
+msgid "+987654321"
+msgstr ""
+
+#: .\templates\includes\footer.html:14
+msgid "Topaz Home 2, Tan Phu, Quan 9, TPHCM"
+msgstr ""
+
+#: .\templates\includes\navbar.html:15
+msgid "Call us"
+msgstr ""
+
+#: .\templates\includes\navbar.html:44
+msgid "All category"
+msgstr ""
+
+#: .\templates\includes\navbar.html:48 .\templates\store\store.html:29
+msgid "All products"
+msgstr ""
+
+#: .\templates\includes\navbar.html:56
+msgid "Store"
+msgstr ""
+
+#: .\templates\includes\navbar.html:75
+msgid "Welcome guest!"
+msgstr ""
+
+#: .\templates\includes\navbar.html:77
+msgid "Log in"
+msgstr ""
+
+#: .\templates\includes\navbar.html:84
+msgid "Welcome"
+msgstr ""
+
+#: .\templates\store\product_detail.html:52
+msgid "Quantity"
+msgstr ""
+
+#: .\templates\store\product_detail.html:59
+#: .\templates\store\product_detail.html:68
+msgid "Add to cart"
+msgstr ""
+
+#: .\templates\store\product_detail.html:63
+msgid "Show cart"
+msgstr ""
+
+#: .\templates\store\product_detail.html:72
+msgid "Out of Stock"
+msgstr ""
+
+#: .\templates\store\store.html:9
+msgid "Our Store"
+msgstr ""
+
+#: .\templates\store\store.html:21
+msgid "Categories"
+msgstr ""
+
+#: .\templates\store\store.html:44
+msgid "Price range"
+msgstr ""
+
+#: .\templates\store\store.html:72
+msgid "Apply"
+msgstr ""
+
+#: .\templates\store\store.html:83
+msgid "Found"
+msgstr ""
+
+#: .\templates\store\store.html:83
+msgid "Items"
+msgstr ""
+
+#: .\templates\store\store.html:96
+msgid "No image available"
+msgstr ""
+
+#: .\templates\store\store.html:106
+msgid "View detail"
+msgstr ""
+
+#: .\templates\store\store.html:118 .\templates\store\store.html:126
+msgid "First"
+msgstr ""
+
+#: .\templates\store\store.html:122 .\templates\store\store.html:129
+msgid "Previous"
+msgstr ""
+
+#: .\templates\store\store.html:157 .\templates\store\store.html:165
+msgid "Next"
+msgstr ""
+
+#: .\templates\store\store.html:161 .\templates\store\store.html:168
+msgid "Last"
+msgstr ""
